@@ -5,9 +5,9 @@ from sklearn.linear_model import LogisticRegression
 from datetime import datetime
 
 
-st.set_page_config(page_title="Women’s Health AI Dashboard", layout="wide")
-st.title("🌸 AI for Women’s Health Dashboard")
-st.write("Track daily health, predict risks, log exercise, and get personalized advice.")
+st.set_page_config(page_title="ArogyaShe – Women’s Health Dashboard", layout="wide")
+st.title("🌸 ArogyaShe")
+st.caption("AI-powered Women’s Health & Wellness Dashboard")
 
 
 if 'history' not in st.session_state:
@@ -226,3 +226,4 @@ if st.button("🔍 Analyze Health Today"):
             st.warning(f"{cond}: {int(prob*100)}% risk. {recommendations[cond]}")
 
     st.info("📢 AI generated advice is informational only; consult a doctor for medical advice.")
+
